@@ -1,0 +1,2 @@
+# flatonacci
+Ejercicio de flatonacci
