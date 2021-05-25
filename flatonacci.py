@@ -30,7 +30,7 @@ def flatonacci(signature: list, n: int) -> list:
     print(err)
     return[]
     
-flatonacci([0,2,1], 10)
+
   
   
     
