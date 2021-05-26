@@ -21,10 +21,12 @@ def flatonacci(signature: list, n: int) -> list:
           return(resultado)
         else:
           resultado.append(valores)
-          print(resultado)
-
-      for i in range(n-3):
-        resultado.append(reduce(lambda x,y: x+y, resultado[:-4:-1]))
+      
+      if n == 0:
+        resultado = [] 
+      else:
+        for i in range(n-3):
+          resultado.append(reduce(lambda x,y: x+y, resultado[:-4:-1]))
 
       print(resultado)
       return resultado
