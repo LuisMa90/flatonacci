@@ -10,6 +10,9 @@ def flatonacci(signature: list, n: int) -> list:
 
     elif n < 0:
       print('El numero '+str(n)+' es negativo solo se premiten numeros enteros')
+    
+    elif len(signature) != 3:
+      print('La lista es diferente a 3')
   
     else:
       for valores in signature:
@@ -29,8 +32,3 @@ def flatonacci(signature: list, n: int) -> list:
   except ValueError as err:
     print(err)
     return[]
-    
-
-  
-  
-    
