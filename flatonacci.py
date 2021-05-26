@@ -5,19 +5,13 @@ def flatonacci(signature: list, n: int) -> list:
   resultado = []
  
   try: 
-    if type(n) != int:
-      print('El dato ingresado '+str(n)+ 'es diferente a un numero entero')
+    if type(n) != int or  n < 0 or len(signature) != 3:
+      print('N no es un numero entero o signature no contiene 3 elementos')
 
-    elif n < 0:
-      print('El numero '+str(n)+' es negativo solo se premiten numeros enteros')
-    
-    elif len(signature) != 3:
-      print('La lista es diferente a 3')
-  
     else:
       for valores in signature:
         if type(valores) != int:
-          print('El listado contiene un str o un numero que no es entero')
+          print('El valor de signature contiene un str o un numero que no es entero')
           return(resultado)
         else:
           resultado.append(valores)
